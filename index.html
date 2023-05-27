@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <!-- toast -->
+    <div id="toast">
+      <div class="checkicon"><i class="fas fa-check-square"></i></div>
+      Please select an answer
+    </div>
+
+    <!-- start quiz button -->
+    <div class="start-screen">
+      <button id="btn-start" class="btn">Start</button>
+    </div>
+
+    <!-- roles -->
+    <div id="roles-screen">
+      <div>Rules of this quiz</div>
+      <ul>
+        <li>You only have <span>90 seconds</span> for each question.</li>
+        <li>
+          You have to select an option before you can go to the next question.
+        </li>
+        <li>There's no going back after selecting an option.</li>
+        <li>You cannot select an option once the timer goes Off.</li>
+        <li>You cannot exit the quiz while playing.</li>
+      </ul>
+      <div class="btn-roles">
+        <button class="btn-exit" class="btn">Exit</button>
+        <button id="btn-continue" class="btn">Continue</button>
+      </div>
+    </div>
+
+    <!-- start quiz button -->
+    <div class="main">
+      <div id="display-container">
+        <div class="header">
+          <div class="number-of-count">
+            <span class="number-of-question">1 of 3 questions</span>
+          </div>
+          <div class="timer-div">
+            <img src="icon/timer.svg" />
+            <span class="time-left"></span>
+          </div>
+        </div>
+        <div id="questions_options">
+          <!-- questions and options will be displayed here -->
+
+          <!-- next button -->
+          <div class="div-next">
+            <button id="btn-next" class="btn">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- score container -->
+    <div class="score-container hide">
+      <div>
+        <img src="icon/score.svg" alt="score" />
+        <div>You have completed the quiz !</div>
+        <div id="user-score">Your score is 0 out of 10</div>
+        <div id="show-answers">Show answers</div>
+        <div class="btn-score">
+          <button id="btn-restart" class="btn">Restart</button>
+          <button class="btn-exit" class="btn">Exit</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- result container -->
+    <div class="main">
+      <div id="display-answers">
+        <div id="number-question"></div>
+        <div class="btn-answer">
+          <button id="btn-restart-answer" class="btn">Restart</button>
+          <button class="btn-exit" class="btn">Exit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/questions.js"></script>
+  <script src="js/main.js"></script>
+</html>
